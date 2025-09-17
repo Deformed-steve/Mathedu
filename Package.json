@@ -1,0 +1,19 @@
+{
+  "name": "github-proxy",
+  "version": "1.0.0",
+  "description": "A GitHub proxy server that mimics browser behavior",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^13.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.0.0"
+  }
+}
