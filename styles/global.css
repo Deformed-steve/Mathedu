@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #24292e;
+  --secondary-color: #0366d6;
+  --accent-color: #28a745;
+  --background-color: #f6f8fa;
+  --text-color: #24292e;
+  --light-text: #6a737d;
+  --border-color: #e1e4e8;
+  --error-color: #cb2431;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.highlight {
+  color: var(--secondary-color);
+}
+
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--light-text);
+}
+
+.footer {
+  padding: 2rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--light-text);
+}
+
+.error {
+  background-color: #ffebe9;
+  border: 1px solid #ffcecb;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  color: var(--error-color);
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: var(--light-text);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
