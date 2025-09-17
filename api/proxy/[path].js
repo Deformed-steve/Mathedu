@@ -1,6 +1,3 @@
-import { createProxyMiddleware } from 'http-proxy-middleware';
-
-// This is the main proxy handler
 export default async function handler(req, res) {
   // Extract the path from the request
   const { path } = req.query;
@@ -31,7 +28,6 @@ export default async function handler(req, res) {
         'Upgrade-Insecure-Requests': '1',
         'Cache-Control': 'max-age=0',
         'TE': 'Trailers',
-        ...req.headers
       },
       redirect: 'manual' // Handle redirects manually
     });
